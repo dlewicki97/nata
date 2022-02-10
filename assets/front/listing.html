@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Listing - Nata Sklep</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" async
+        href="dist/assets/owl.carousel.min.css" />
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" async
+        href="dist/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/layout/layout.css" />
+    <link rel="stylesheet" href="css/listing/listing.css" />
+    <link rel="stylesheet" href="css/listing/nouislider.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand logo-bg" href="#"><img class="lazy logo" data-src="img/layout/logo.svg" alt="" /></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-3 mb-lg-0 pl-0 pl-lg-4 mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sklep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nowości</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Outlet</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="production-dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Produkcja własna</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="production-dropdown">
+                            <a class="dropdown-item" href="#">Odzież trudnopalna</a>
+                            <a class="dropdown-item" href="#">Odzież z klasą widzialności</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="services-dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Usługi</a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="services-dropdown">
+                            <a class="dropdown-item" href="#">Szycie odzieży</a>
+                            <a class="dropdown-item" href="#">Znakowanie i zdobienie odzieży</a>
+                            <a class="dropdown-item" href="#">Naprawa odzieży</a>
+                            <a class="dropdown-item" href="#">Pralnictwo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline mr-sm-2">
+                    <input class="header-input" type="text" placeholder="Szukaj..." />
+                    <a class="magnify-container" href="#">
+                        <img data-src="img/icons/magnify.svg" alt="" class="lazy">
+                    </a>
+                </form>
+                <div class="header-icons">
+                    <a href="/ulubione">
+                        <div class="header-icon-container">
+                            <div class="notifications">5</div>
+                            <img data-src="img/icons/heart-outline.svg" alt="" class="lazy" />
+                        </div>
+                    </a>
+                    <a href="/koszyk">
+                        <div class="header-icon-container">
+                            <div class="notifications">3</div>
+                            <img data-src="img/icons/cart.svg" alt="" class="lazy" />
+                        </div>
+                    </a>
+                </div>
+
+                <a href="/logowanie">
+                    <button class="button first-button">Zaloguj się</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="breadcrumb">
+            <div class="item"><a href="#">SKLEP NATA</a></div>
+            <div class="item">></div>
+            <div class="item"><a href="#">Obróbka metali oraz operatorzy maszyn i urządzeń oraz ich naprawa</a></div>
+        </section>
+        <section class="product-listing-container">
+            <aside>
+                <form action="">
+                    <h5 class="filter-products">Filtruj produkty</h5>
+                    <div class="accordion filter-wrapper" id="filters" role="tablist" aria-multiselectable="true">
+
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading1">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse0" aria-expanded="false"
+                                    aria-controls="collapse0">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Producent</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse0" class="collapse" role="tabpanel" aria-labelledby="heading1">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>Producent 1</li>
+                                        <li>Producent 2</li>
+                                        <li>Producent 3</li>
+                                        <li>Producent 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading1">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse1" aria-expanded="false"
+                                    aria-controls="collapse1">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Cena</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>Cena 1</li>
+                                        <li>Cena 2</li>
+                                        <li>Cena 3</li>
+                                        <li>Cena 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading2">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse2" aria-expanded="false"
+                                    aria-controls="collapse2">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Linie</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>Linie 1</li>
+                                        <li>Linie 2</li>
+                                        <li>Linie 3</li>
+                                        <li>Linie 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading3">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse3" aria-expanded="false"
+                                    aria-controls="collapse3">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Branże</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>Logistyka w tym transport i przeładunek (prace magazynowe)</li>
+                                        <li>Obróbka metali oraz operatorzy maszyn i urządzeń oraz
+                                            ich
+                                            naprawa</li>
+                                        <li>Obsługa techniczna obiektów w tym hoteli, prace domowe oraz
+                                            porządkowe,
+                                            kwiaciarnie</li>
+                                        <li>Prace budowlane i remontowe, montażowo-instalacyjne, budowa dróg
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading4">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse4" aria-expanded="false"
+                                    aria-controls="collapse4">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Własności</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>Własnośći 1</li>
+                                        <li>Własnośći 2</li>
+                                        <li>Własnośći 3</li>
+                                        <li>Własnośći 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading5">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse5" aria-expanded="false"
+                                    aria-controls="collapse5">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Normy</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>normy 1</li>
+                                        <li>normy 2</li>
+                                        <li>normy 3</li>
+                                        <li>normy 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading6">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse6" aria-expanded="false"
+                                    aria-controls="collapse6">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Kolory</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>Kolor 1</li>
+                                        <li>Kolor 2</li>
+                                        <li>Kolor 3</li>
+                                        <li>Kolor 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading7">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse7" aria-expanded="false"
+                                    aria-controls="collapse7">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Odmiany</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>odmiana 1</li>
+                                        <li>odmiana 2</li>
+                                        <li>odmiana 3</li>
+                                        <li>odmiana 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading8">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse8" aria-expanded="false"
+                                    aria-controls="collapse8">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Rozmiary</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>Rozmiar 1</li>
+                                        <li>Rozmiar 2</li>
+                                        <li>Rozmiar 3</li>
+                                        <li>Rozmiar 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-header" role="tab" id="heading9">
+                                <a data-toggle="collapse" data-parent="#filters" href="#collapse9" aria-expanded="false"
+                                    aria-controls="collapse9">
+                                    <h5 class="mb-0 d-flex justify-content-between">
+                                        <span>Atrybuty</span> <span class="icon">+</span>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9">
+                                <div class="card-body">
+                                    <!-- <input type="text" placeholder="Szukaj..." class="header-input"> -->
+                                    <ul class="filter-list">
+                                        <li>atrybut 1</li>
+                                        <li>atrybut 2</li>
+                                        <li>atrybut 3</li>
+                                        <li>atrybut 4
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="filter-products mt-4 mb-3">Kategorie</h5>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/1.svg" alt="" class="lazy">
+                            Ochrona rąk
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/2.svg" alt="" class="lazy">
+                            Ochrona ciała
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/3.svg" alt="" class="lazy">
+                            Ochrona nóg
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/4.svg" alt="" class="lazy">
+                            Ochrona dróg oddechowych
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/5.svg" alt="" class="lazy">
+                            Ochrona głowy
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/6.svg" alt="" class="lazy">
+                            Ochrona słuchu
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/7.svg" alt="" class="lazy">
+                            Ochrona oczu
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/8.svg" alt="" class="lazy">
+                            Ochrona przed upadkiem
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/9.svg" alt="" class="lazy">
+                            Ochrona przeciwpożarowa
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/10.svg" alt="" class="lazy">
+                            Higiena i czystość
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/11.svg" alt="" class="lazy">
+                            Wyposażenie zakładów
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="category-row">
+                            <img data-src="img/listing/categories/12.svg" alt="" class="lazy">
+                            Pozostałe artykuły
+                        </div>
+                    </a>
+
+                    <button type="submit" class="button first-button mt-4">Filtruj</button>
+                </form>
+            </aside>
+
+            <section class="product-listing">
+                <section class="sort">
+                    <h2 class="title">Produkty</h2>
+
+                    <div class="double-slider-container">
+                        <h6 class="sort-title">Cena: </h6>
+                        <div class="d-flex align-items-center">
+                            <input id="price-range-min" disabled class="price-input mx-0" aria-label="min" type="text"
+                                name="price_min" />
+                            <div id="price-slider"></div>
+                            <input id="price-range-max" disabled class="price-input mx-0" aria-label="text" type="text"
+                                name="price_max" />
+                        </div>
+                    </div>
+                    <div class="sort-type-container">
+                        <h6 class="sort-title">Sortuj według: </h6>
+                        <select class="sort-select">
+                            <option selected value="Popularność">Popularność</option>
+                            <option value="Data">Data</option>
+                        </select>
+                    </div>
+
+                    <div class="layout-switch">
+                        <div class="switch columns active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M0 9V0h9v9z" />
+                                        </g>
+                                        <g>
+                                            <path d="M13 9V0h9v9z" />
+                                        </g>
+                                        <g>
+                                            <path d="M13 22v-9h9v9z" />
+                                        </g>
+                                        <g>
+                                            <path d="M0 22v-9h9v9z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="switch rows">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M0 5V0h22v5z" />
+                                        </g>
+                                        <g>
+                                            <path d="M0 13V8h22v5z" />
+                                        </g>
+                                        <g>
+                                            <path d="M0 21v-5h22v5z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+                <section class="sort mt-4">
+                    <div class="used-filters">
+                        <div class="title">Użyte filtry:</div>
+                        <div class="tags">
+                            <!-- <div class="tag">Obróbka metali oraz operatorzy maszyn i urządzeń oraz ich naprawa
+                                <span class="dismiss">x</span>
+                            </div>
+                            <div class="tag">Cena: od 29 do 1399 <span class="dismiss">x</span></div> -->
+                        </div>
+                    </div>
+                </section>
+                <section class="listing">
+                    <div class="col-12 col-md-4">
+                        <div class="product">
+                            <div data-bg="img/main/recommended/1.png" alt="" class="lazy bg photo">
+                                <img data-src="img/listing/heart-outline.svg" alt="" class="lazy heart">
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+                                <div class="content">
+                                    <div class="title">DURA2000C</div>
+                                    <div class="price">79,00 ZŁ</div>
+                                </div>
+                                <div class="cart-container">
+                                    <img data-src="img/main/recommended/cart.svg" alt="" class="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="product">
+                            <div data-bg="img/main/recommended/1.png" alt="" class="lazy bg photo">
+                                <img data-src="img/listing/heart-outline.svg" alt="" class="lazy heart">
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+                                <div class="content">
+                                    <div class="title">DURA2000C</div>
+                                    <div class="price">79,00 ZŁ</div>
+                                </div>
+                                <div class="cart-container">
+                                    <img data-src="img/main/recommended/cart.svg" alt="" class="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="product">
+                            <div data-bg="img/main/recommended/1.png" alt="" class="lazy bg photo">
+                                <img data-src="img/listing/heart-outline.svg" alt="" class="lazy heart">
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+                                <div class="content">
+                                    <div class="title">DURA2000C</div>
+                                    <div class="price">79,00 ZŁ</div>
+                                </div>
+                                <div class="cart-container">
+                                    <img data-src="img/main/recommended/cart.svg" alt="" class="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="product">
+                            <div data-bg="img/main/recommended/1.png" alt="" class="lazy bg photo">
+                                <img data-src="img/listing/heart-outline.svg" alt="" class="lazy heart">
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+                                <div class="content">
+                                    <div class="title">DURA2000C</div>
+                                    <div class="price">79,00 ZŁ</div>
+                                </div>
+                                <div class="cart-container">
+                                    <img data-src="img/main/recommended/cart.svg" alt="" class="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="product">
+                            <div data-bg="img/main/recommended/1.png" alt="" class="lazy bg photo">
+                                <img data-src="img/listing/heart-outline.svg" alt="" class="lazy heart">
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+                                <div class="content">
+                                    <div class="title">DURA2000C</div>
+                                    <div class="price">79,00 ZŁ</div>
+                                </div>
+                                <div class="cart-container">
+                                    <img data-src="img/main/recommended/cart.svg" alt="" class="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="product">
+                            <div data-bg="img/main/recommended/1.png" alt="" class="lazy bg photo">
+                                <img data-src="img/listing/heart-outline.svg" alt="" class="lazy heart">
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+                                <div class="content">
+                                    <div class="title">DURA2000C</div>
+                                    <div class="price">79,00 ZŁ</div>
+                                </div>
+                                <div class="cart-container">
+                                    <img data-src="img/main/recommended/cart.svg" alt="" class="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pagination align-items-center my-5">
+                    <div class="d-flex align-items-center mb-2 mb-sm-0 result-container">
+                        <select name="" id="" class="sort-select pr-1 mr-2">
+                            <option selected value="30">30</option>
+                            <option value="20">20</option>
+                            <option value="10">10</option>
+                        </select>
+                        <span>wyników na stronie</span>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center pagination-row align-items-center mb-2 mb-sm-0">
+                        <div class="item"><img data-src="img/main/arrow-left.svg" alt="" class="lazy"></div>
+                        <div class="item active">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
+                        <div class="item">...</div>
+                        <div class="item">8</div>
+                        <div class="item"><img data-src="img/main/arrow-right.svg" alt="" class="lazy"></div>
+                    </div>
+
+                    <span class="desc">1-12 z 91 produktów</span>
+                </section>
+            </section>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="newsletter lazy bg" data-bg="img/layout/newsletter-bg.png">
+            <div class="col-12 col-lg-6">
+                <h3 class="section-title text-white">Zapisz do newslettera</h3>
+                <div class="section-subtitle">
+                    <p>
+                        aby otrzymywać zniżki oraz informacje o promocjach i wyprzedażach.
+                    </p>
+                </div>
+
+                <form action="">
+                    <input class="newsletter-input" placeholder="Adres e-mail" type="email" />
+                    <div class="custom-control custom-checkbox p-0">
+                        <input type="checkbox" required="" name="rodo1" class="form-check-input" id="rodo1" />
+                        <label class="form-check-label text-white checkbox-label" for="rodo1">* Wyrażam zgodę na
+                            przetwarzanie moich
+                            danych osobowych w celach
+                            marketingowych w zgodzie i według zasad określonych w Polityce
+                            prywatności przez: NATA PPHU. Wiem, że w każdej chwili mogę
+                            odwołać zgodę.</label>
+                    </div>
+                    <button type="submit" class="button white-button">Zapisz się</button>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="content">
+                <div class="column">
+                    <h6>Ważne informacje</h6>
+
+                    <ul>
+                        <li><a href="">Formy płatności</a></li>
+                        <li><a href="">Koszty dostawy</a></li>
+                        <li><a href="">Zwroty i reklamacje</a></li>
+                        <li><a href="">Regulamin zakupów</a></li>
+                        <li><a href="">Polityka prywatności</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h6>Moje konto</h6>
+
+                    <ul>
+                        <li><a href="">Zaloguj się</a></li>
+                        <li><a href="">Moje zamówienia</a></li>
+                        <li><a href="">Moje adresy</a></li>
+                        <li><a href="">Oferta hurtowa</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h6>Nata</h6>
+
+                    <ul>
+                        <li><a href="">O nas</a></li>
+                        <li><a href="">Partnerzy</a></li>
+                        <li><a href="">Aktualności</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h6>Kontakt</h6>
+
+                    <ul>
+                        <li class="bold">NATA PPHU</li>
+                        <li>
+                            <a href="">ul. Ulicowa 74<br />59-300 Lubin</a>
+                        </li>
+                        <li>NIP: 633-392-12-91</li>
+                        <li><br /></li>
+                        <li class="bold">
+                            <a href="tel:+48 782 913 923">+48 782 913 923</a>
+                        </li>
+                        <li class="bold">
+                            <a href="mailto:sklep@nata.pl">sklep@nata.pl</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h6>Znajdziesz nas na</h6>
+
+                    <ul class="socials">
+                        <li>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 25 25">
+                                    <g>
+                                        <g>
+                                            <path fill="#383d47"
+                                                d="M24.64 12.574c0-6.806-5.514-12.32-12.32-12.32S0 5.768 0 12.574c0 6.15 4.505 11.247 10.395 12.172v-8.61h-3.13v-3.562h3.13V9.86c0-3.088 1.838-4.793 4.654-4.793 1.348 0 2.758.24 2.758.24v3.03h-1.554c-1.53 0-2.008.95-2.008 1.925v2.312h3.417l-.546 3.562h-2.87v8.61c5.89-.925 10.395-6.022 10.395-12.172z" />
+                                        </g>
+                                    </g>
+                                </svg>Facebook</a>
+                        </li>
+                        <li>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="27" height="24"
+                                    viewBox="0 0 27 24">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path fill="#383d47"
+                                                    d="M.467 12c0-6.627 5.82-12 13-12s13 5.373 13 12-5.82 12-13 12-13-5.373-13-12z" />
+                                            </g>
+                                            <g>
+                                                <path class="ig-contour" fill="#fff"
+                                                    d="M16.336 7.835a.78.78 0 1 0 0 1.562.78.78 0 0 0 0-1.562zm-3.472 6.42a2.167 2.167 0 1 1-.002-4.335 2.167 2.167 0 0 1 .002 4.334zm0-5.508a3.34 3.34 0 1 0 0 6.679 3.34 3.34 0 0 0 0-6.68zm0-1.994c1.736 0 1.943.009 2.628.039.634.03.979.135 1.207.225.305.117.52.258.75.485.226.228.367.444.485.749.089.228.195.573.224 1.207.03.686.038.892.038 2.628 0 1.737-.008 1.943-.04 2.629-.033.634-.14.978-.229 1.207-.12.305-.26.52-.487.749a2.03 2.03 0 0 1-.748.486c-.227.089-.577.195-1.211.223-.69.031-.894.038-2.634.038-1.74 0-1.943-.008-2.633-.04-.635-.033-.984-.138-1.212-.228a2.014 2.014 0 0 1-.747-.487 1.975 1.975 0 0 1-.488-.748c-.09-.228-.195-.577-.228-1.211-.024-.683-.033-.894-.033-2.626 0-1.732.009-1.943.033-2.634.033-.635.138-.984.228-1.211.114-.31.26-.52.488-.749.227-.227.439-.373.747-.486.228-.09.57-.196 1.204-.229.69-.024.894-.032 2.633-.032l.025.016zm0-1.17c-1.767 0-1.988.008-2.682.039-.692.032-1.164.141-1.578.302-.428.166-.791.389-1.153.75a3.173 3.173 0 0 0-.75 1.152c-.16.415-.27.886-.302 1.58-.033.693-.04.913-.04 2.68 0 1.767.009 1.988.04 2.682.032.692.141 1.164.302 1.578.166.427.389.791.75 1.153a3.18 3.18 0 0 0 1.153.75c.415.16.886.27 1.578.302.694.033.915.04 2.682.04s1.987-.009 2.68-.04c.693-.032 1.165-.142 1.58-.302.427-.166.79-.39 1.152-.75.36-.362.585-.724.75-1.153.16-.414.27-.886.302-1.578.033-.694.04-.915.04-2.682s-.009-1.987-.04-2.68c-.032-.693-.142-1.166-.302-1.58a3.192 3.192 0 0 0-.75-1.152 3.169 3.169 0 0 0-1.152-.75c-.415-.161-.887-.27-1.58-.302-.693-.033-.913-.04-2.68-.04z" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="ad-awards">
+            © Copyright 2020 BY NATA PPHU. CREATED WITH LOVE BY
+            <a target="_blank" href="https://agencjamedialna.pro/">AD AWARDS</a>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script type="text/javascript" src="js/initializator.js"></script>
+    <script type="text/javascript" src="js/listing/aside-accordions.js"></script>
+    <script type="text/javascript" src="js/listing/searching-filters.js"></script>
+    <script type="text/javascript" src="./js/listing/double-slider/nouislider.js"></script>
+    <script type="text/javascript" src="./js/listing/double-slider/wNumb.js"></script>
+    <script type="text/javascript" src="./js/listing/double-slider/double-slider-config.js"></script>
+    <script type="text/javascript" src="./js/listing/layout-switch/switcher.js"></script>
+    <script type="text/javascript" src="./js/listing/hearts.js"></script>
+    <script type="text/javascript" src="./js/listing/tags/tags.js"></script>
+    <script type="text/javascript" src="./js/listing/tags/new-tag.js"></script>
+</body>
+
+</html>

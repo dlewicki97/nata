@@ -1,0 +1,39 @@
+.contact-data {
+  margin-bottom: 3rem;
+  transition: 0.2s all;
+  &.location:hover {
+    a {
+      color: $secondBg;
+    }
+  }
+  a {
+    color: $firstBg;
+    font-weight: 700;
+    &:hover {
+      color: $secondBg;
+    }
+  }
+  &:hover {
+    color: $secondBg;
+  }
+  .icon-container {
+    border-radius: 50%;
+    width: 100px;
+    margin: auto;
+    height: 100px;
+    border: 1px solid $mainBg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+    transition: 0.2s all;
+    &:hover i {
+      color: $secondBg;
+    }
+    i {
+      font-size: 2rem;
+      color: $firstBg;
+      transition: 0.2s all;
+    }
+  }
+}

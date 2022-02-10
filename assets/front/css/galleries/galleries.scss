@@ -1,0 +1,29 @@
+@import '../layout/colors';
+@import '../news/breadcrumb';
+@import '../news/pagination';
+
+main {
+  padding: 3rem 5rem;
+  background-color: #fff;
+  @media (max-width: 992px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @media (max-width: 576px) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+.galleries {
+  padding-left: 0;
+  padding-right: 0;
+
+  .bg {
+    height: 300px;
+  }
+  .title {
+    color: black;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+}

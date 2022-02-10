@@ -1,0 +1,47 @@
+@import "../news/breadcrumb";
+@import "../validation-errors/validation_errors";
+
+main {
+  background-color: #fff;
+}
+section.breadcrumb {
+  padding-left: 5rem;
+}
+
+section.register-form,
+section.login-form {
+  .header-input {
+    background-color: $mainBg;
+    height: 40px;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+    width: 100%;
+    display: block;
+  }
+
+  .form-check-label {
+    color: $text !important;
+    font-size: 0.7rem;
+    line-height: 15px;
+  }
+  .form-check-input[type="checkbox"] + label:before,
+  .form-check-input[type="checkbox"]:not(.filled-in) + label:after,
+  label.btn input[type="checkbox"] + label:before,
+  label.btn input[type="checkbox"]:not(.filled-in) + label:after {
+    border-color: $text;
+  }
+  .form-link {
+    font-size: 0.8rem;
+    color: $text;
+    text-decoration: underline;
+    &:hover {
+      color: $secondBg;
+    }
+  }
+}
+
+section.login-form {
+  .bg {
+    height: 400px;
+  }
+}

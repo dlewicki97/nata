@@ -1,0 +1,208 @@
+.actual-rating {
+  text-align: center;
+  padding-right: 3rem;
+  .number {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0.2rem;
+  }
+
+  .opinions-counter {
+    opacity: 0.15;
+    color: black;
+  }
+}
+.stars {
+  display: flex;
+}
+.star {
+  height: 15px;
+  margin-right: 0.15rem;
+}
+
+.rating-stats {
+  line-height: 17px;
+  .track {
+    position: relative;
+    width: 100px;
+    height: 3px;
+    background-color: #dadada;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    .line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $secondBg;
+      height: 100%;
+    }
+  }
+  .each-opinion-counter {
+    font-weight: 400;
+    color: black;
+  }
+}
+.add-opinion-container {
+  border: 1px solid #efefef;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+.add-opinion-col {
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
+}
+.add-opinion-container h5,
+.users-opinions-title {
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: black;
+}
+.modal .modal-body {
+  padding: 2rem 3rem;
+}
+:is(.question-container, .modal) {
+  button {
+    color: white !important;
+  }
+}
+:is(.question-container, .modal) .section-title {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.section-title {
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-top: -4px;
+}
+.modal-body .close {
+  font-size: 1.5rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  right: 10%;
+  position: absolute;
+  color: black !important;
+}
+
+.modal-main-photo {
+  background-size: contain;
+  height: 200px;
+  width: auto;
+  padding-right: 1rem;
+}
+
+:is(.question-container, .modal) .product-cat {
+  font-size: 0.8rem;
+}
+.product-cat {
+  font-weight: 400;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+:is(.question-container, .modal) .product-name {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.modal-form .stars {
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+:is(.question-container, .modal) {
+  .form-check-input[type="checkbox"] + label:before {
+    border: 2px solid #383d471a;
+  }
+}
+.modal-form .star {
+  height: 25px;
+  cursor: pointer;
+}
+.modal-input {
+  display: block;
+  outline: unset;
+  border: unset;
+  background-color: $mainBg;
+  color: #a7a7a7;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+  font-size: 0.7rem;
+}
+.rodo {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  color: white;
+  opacity: 0;
+  display: none;
+  padding: 0.6rem 0.9rem;
+  line-height: 12px;
+  font-size: 0.6rem;
+  transition: 0.2s all;
+}
+.rodo .arrow {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid black;
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-100%);
+}
+.question-container {
+  width: 50%;
+  margin: auto;
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
+}
+.checkbox-label {
+  color: var(--text-color) !important;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.checkbox-label span {
+  color: var(--first-color) !important;
+}
+.modal-form button {
+  margin: auto;
+  font-size: 0.7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.users-opinions {
+  padding-bottom: 3rem;
+  .opinion {
+    padding-top: 1rem;
+    .name {
+      font-weight: 700;
+      margin-right: 0.4rem;
+      font-size: 0.9rem;
+    }
+    .stars {
+      margin-right: 0.4rem;
+    }
+    .date {
+      color: #dadada;
+      font-size: 0.8rem;
+    }
+    .description {
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+  }
+}

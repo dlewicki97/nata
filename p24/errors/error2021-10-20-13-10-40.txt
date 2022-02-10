@@ -1,0 +1,1 @@
+{"error":"1","errorMessage":"p24_email:Empty p24_email","p24_amount:Incorrect value":"","p24_sign:Incorrect CRC value":""}

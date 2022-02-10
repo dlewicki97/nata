@@ -1,0 +1,68 @@
+@import "../news/breadcrumb";
+
+main {
+  background-color: #fff;
+}
+section.breadcrumb {
+  padding-left: 5rem;
+}
+section.my-orders {
+  @mixin active-column {
+    background-color: #19a299c7;
+    color: white;
+  }
+  padding-bottom: 5rem;
+  color: $text;
+  table {
+    width: 100%;
+    thead {
+      td {
+        font-weight: 700;
+        @include active-column;
+        border: 1px solid #2e2e2e17;
+      }
+    }
+  }
+  tr {
+    border-bottom: 2px solid #2e2e2e17;
+    @media (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      border-color: $text;
+    }
+  }
+  td {
+    text-align: center;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+    font-weight: 500;
+    transition: 0.2s all;
+    border: 1px solid #2e2e2e17;
+    @media (max-width: 992px) {
+      text-align: left;
+      padding-left: 0.7rem;
+    }
+    &:hover {
+      @include active-column;
+    }
+  }
+  tbody {
+    td {
+      @media (max-width: 992px) {
+        border-bottom: 1px solid #2e2e2e17;
+      }
+    }
+  }
+  td.warning {
+    background-color: $warning;
+    color: white;
+  }
+  td.during {
+    background-color: $during;
+    color: white;
+  }
+  td.success {
+    background-color: $secondBg;
+    color: white;
+  }
+}

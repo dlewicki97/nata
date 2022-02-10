@@ -1,0 +1,65 @@
+@import "../layout/colors";
+@import "product";
+
+section.recommended {
+  margin-top: 3rem;
+  .second-carousel {
+    position: relative;
+
+    .bg-picture {
+      height: 400px;
+      max-height: unset !important;
+    }
+
+    .arrow-container {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+    .arrow-container.left {
+      left: 0;
+    }
+    .arrow-container.right {
+      right: 0;
+    }
+  }
+  .first-carousel > .d-flex {
+    @media (max-width: 992px) {
+      margin-bottom: 2rem;
+    }
+  }
+  .first-carousel {
+    .owl-item {
+      padding-right: 1rem;
+    }
+  }
+  .third-carousel {
+    cursor: pointer;
+  }
+
+  .section-title {
+    margin-bottom: 1rem;
+  }
+}
+
+.arrows {
+  display: flex;
+  .arrow-container {
+    background-color: $firstBg;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    transition: 0.2s all;
+    cursor: pointer;
+    img {
+      height: 15px;
+    }
+    &:hover {
+      background-color: $secondBg;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.reminder-container {
+  .reminder-inputs {
+    width: 20%;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #3a3f4936;
+  }
+  .checkbox-label {
+    line-height: 12px !important;
+  }
+  .form-check-input[type="checkbox"]:checked + label:before,
+  label.btn input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    height: 1rem;
+  }
+}
+
+:is(.reminder) .form-check-input[type="checkbox"] + label:before {
+  border: 2px solid #383d471a;
+  width: 10px;
+  height: 10px;
+}

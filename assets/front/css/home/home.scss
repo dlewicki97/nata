@@ -1,0 +1,173 @@
+@import "../layout/colors";
+@import "categories";
+@import "recommended";
+@import "handmade";
+@import "brands";
+$sliderCounterOpacity: 0.3;
+
+@mixin subtitle {
+  letter-spacing: 6.3px;
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+section.slider {
+  width: 100%;
+  padding-left: 0 !important;
+  background-color: #fff;
+  position: relative;
+  @media (max-width: 992px) {
+    order: 1;
+  }
+  .slider-fill {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(5rem);
+    height: 100%;
+    z-index: 1000;
+    background-color: $mainBg;
+    transform: translateX(-100%);
+  }
+  .slider-item,
+  .owl-item {
+    // height: 70vh !important;
+    height: unset !important;
+    @media (max-width: 992px) {
+      height: 100% !important;
+    }
+  }
+  .title {
+    font-size: 2.9rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+  }
+  .subtitle,
+  .subtitle p {
+    @include subtitle;
+  }
+  button {
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    width: fit-content;
+  }
+  .title-col {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem !important;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @media (max-width: 992px) {
+      order: 2;
+      justify-content: flex-end;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    @media (max-width: 600px) {
+      padding-left: 2rem !important;
+    }
+    @media (max-width: 400px) {
+      padding-left: 1rem !important;
+    }
+  }
+  .img-col {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    img {
+      object-fit: contain;
+      width: auto;
+      height: 100%;
+      @media (max-width: 992px) {
+        object-fit: contain;
+      }
+    }
+    @media (max-width: 992px) {
+      order: 1;
+      height: 400px;
+    }
+  }
+}
+section.slider-container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 3rem;
+  display: flex;
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+}
+section.slider-counter {
+  background-color: $mainBg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  @media (max-width: 992px) {
+    order: 2;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+    .element {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  .element {
+    color: #2e2e2e;
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: 0.7rem;
+    .number {
+      opacity: $sliderCounterOpacity;
+      margin-bottom: 0.7rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .track {
+      width: 2px;
+      height: 30px;
+      margin: auto;
+      background-color: #2e2e2e;
+      opacity: $sliderCounterOpacity;
+    }
+    .line {
+      position: absolute;
+      opacity: 1;
+      z-index: 1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      width: 2px;
+      background-color: #2e2e2e;
+    }
+  }
+  .element.active {
+    .number {
+      color: inherit;
+      opacity: 1;
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+    .line {
+      animation-name: fill-line;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes fill-line {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}

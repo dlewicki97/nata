@@ -1,0 +1,289 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.br-sideleft {
+  background-color: #212121;
+}
+:is(.additional-attributes, .related-products) input {
+  color: unset;
+}
+.select2 {
+  width: 100% !important;
+}
+.br-menu-link.active {
+  background-color: #000;
+}
+.br-menu-link:hover,
+.br-menu-link:focus {
+  background-color: #3e4551;
+}
+.br-menu-sub {
+  background-color: #4b515d;
+}
+.br-menu-link.show-sub {
+  background-color: #000;
+}
+.br-menu-sub .nav-link:hover,
+.br-menu-sub .nav-link:focus {
+  color: #fff;
+}
+.br-menu-sub .nav-link:hover::before,
+.br-menu-sub .nav-link:focus::before {
+  background-color: #fff;
+}
+.br-logo > a span {
+  color: #212121;
+}
+.user-profile-nav .icon {
+  color: #212121;
+}
+.sidebar-tabs {
+  background-color: #212121;
+}
+.sidebar-tabs .nav-link.active {
+  background-color: #3e4551;
+  color: #fff;
+}
+.tab-content > .active {
+  background-color: #3e4551;
+}
+.sidebar-datepicker .ui-datepicker-calendar thead th {
+  color: #fff;
+}
+.tx-info {
+  color: #212121;
+}
+.btn-info {
+  background-color: #212121;
+  cursor: pointer;
+  border-color: #212121;
+}
+.btn-info:hover {
+  background-color: #000;
+  border-color: #000;
+}
+.link:hover {
+  color: #000 !important;
+}
+.form-control:focus,
+.dataTables_filter input:focus {
+  border-color: #000;
+}
+button {
+  cursor: pointer;
+}
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: #212121;
+}
+.custom-file-control-inverse::before {
+  background-color: #212121;
+}
+.custom-file-control:lang(en)::before {
+  content: "Przeglądaj";
+}
+.custom-file-control:lang(en):empty::after {
+  content: "Wybierz plik...";
+}
+#alert-box {
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+  font-weight: 700;
+  background-color: #212121;
+  margin-bottom: 20px;
+  display: inline-table;
+}
+.popover {
+  z-index: 2001;
+}
+.more {
+  cursor: pointer;
+}
+.bootstrap-tagsinput {
+  background-color: #18222f;
+  border: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.bootstrap-tagsinput .label {
+  background-color: #4b515d;
+}
+input {
+  color: rgba(255, 255, 255, 0.6);
+}
+.btn {
+  cursor: pointer;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:focus {
+  background-color: #212121;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #ecf0f1;
+  /* display: none; */
+}
+#status {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+}
+.sk-double-bounce .sk-child {
+  border-radius: 0%;
+}
+.sk-double-bounce {
+  width: 83px;
+  height: 83px;
+}
+.delete_photo:hover {
+  background-image: url(http://cynkmal.przedprojekt.com/application/views/images/x-button.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.delete_photo img:hover {
+  opacity: 0.4;
+}
+.cursor {
+  cursor: pointer;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  display: inline-block;
+}
+.logged-name {
+  vertical-align: top;
+  margin-top: 7px;
+}
+.br-menu-sub .nav-link.active {
+  color: white;
+}
+.br-menu-sub .nav-link.active::before {
+  background-color: #fff;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  color: black;
+}
+.tab-content > .active {
+  background-color: #e9ecef;
+}
+.nav-tabs {
+  border-bottom: 0;
+}
+.product_name {
+  position: relative;
+}
+.qty_warning {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  font-size: 1.2rem;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.order_tab_color {
+  color: #fff !important;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.deliveryArea {
+  position: relative;
+}
+.remove-btn {
+  position: absolute;
+  background: #f00;
+  background-position: center;
+  padding: 10px;
+  top: -10px;
+  right: -10px;
+  z-index: 2;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+.errors {
+  color: #f00 !important;
+}
+
+.active__row {
+  background-color: #2ed3ae !important;
+  color: black;
+}
+.add_variant:hover {
+  cursor: pointer;
+  background-color: #ced4da;
+}
+.add_variant:active {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.select2-container {
+  z-index: 2000;
+}
+.paging strong,
+.paging a {
+  padding: 10px 15px;
+}
+.paging strong {
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+}
+.paging a {
+  color: #000;
+}
+.search_item {
+  display: none;
+}
+.search_item:hover {
+  background-color: #ececec;
+}
+#productsSearch {
+  position: absolute;
+  z-index: 9999;
+  max-height: 500px;
+  overflow-y: scroll;
+  width: 200px;
+}
+.page_number {
+  width: 50px;
+  color: #000;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.variants {
+  position: relative;
+}
+.removeVariant {
+  position: absolute;
+  top: -14px;
+  right: -7px;
+  font-size: 150%;
+  cursor: pointer;
+  padding: 0 7px;
+  background: rgba(255, 0, 0);
+  color: #fff;
+  border-radius: 3px;
+  opacity: 0.7;
+}
+.removeVariant:hover {
+  opacity: 1;
+}
+.br-sideleft {
+  z-index: 105;
+}
+.tab-background > .active {
+  background-color: #3e4551 !important;
+}
+.easypack-dropdown__search {
+  color: #000;
+}

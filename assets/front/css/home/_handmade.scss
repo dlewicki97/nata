@@ -1,0 +1,45 @@
+@import "../layout/colors";
+
+section.handmade {
+  background-color: $mainBg;
+  margin-top: 5rem;
+  .section-title {
+    margin-bottom: 2rem;
+  }
+  .h-50 {
+    background-color: $mainBg;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 2rem;
+    background-color: #fff;
+    width: fit-content;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  .bg-picture {
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-right: 0;
+    background-color: #fff;
+    @media (max-width: 500px) {
+      background-size: cover;
+    }
+    button {
+      width: fit-content;
+    }
+  }
+  .col-lg-5 {
+    .bg-picture {
+      height: 400px;
+    }
+    background-color: $mainBg !important;
+  }
+  .col-12 {
+    background-color: #fff;
+  }
+}

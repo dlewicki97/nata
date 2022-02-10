@@ -1,0 +1,84 @@
+@import "rating";
+
+$text: #383d47;
+
+.desc-title {
+  font-weight: 700;
+  color: $text;
+  font-size: 1rem;
+}
+.desc-list {
+  list-style-type: disc;
+  padding-left: 0.4rem;
+  a {
+    display: none;
+  }
+  ::marker {
+    content: "\00b7";
+  }
+  li {
+    color: $text;
+    line-height: 21px;
+    padding-left: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+}
+
+.parameters {
+  width: 60%;
+  margin-top: 3rem;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+  .parameter {
+    display: flex;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #d6d6d6;
+    font-size: 0.75rem;
+    &:last-child {
+      border-bottom: unset;
+    }
+    .title {
+      font-weight: 700;
+      width: 50%;
+    }
+    .value {
+      width: 50%;
+    }
+  }
+}
+
+.additional-list {
+  background-color: #f3f4f8;
+  padding: 1rem;
+  @media (max-width: 992px) {
+    margin-top: 2rem;
+  }
+  .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    img {
+      height: 30px;
+      margin-right: 1rem;
+    }
+  }
+}
+.tab-content {
+  padding-left: 0;
+  padding-right: 0;
+}

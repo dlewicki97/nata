@@ -1,0 +1,44 @@
+section.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  padding-left: 0;
+}
+
+section.breadcrumb .item {
+  font-size: 0.7rem;
+  color: #2e2e2e4f;
+  font-weight: 700;
+  margin-right: 0.2rem;
+  text-transform: uppercase;
+}
+
+section.breadcrumb .item a {
+  color: inherit;
+}
+
+section.breadcrumb .item a:hover {
+  color: #19a299;
+}
+
+main {
+  background-color: #fff;
+}
+
+section.breadcrumb {
+  padding-left: 5rem;
+}
+
+section.single-service {
+  padding-bottom: 5rem;
+}
+
+section.single-service .gallery-photo {
+  height: 200px;
+}
+
+p {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=services.css.map */

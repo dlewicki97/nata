@@ -1,0 +1,46 @@
+@import '../news/breadcrumb';
+
+main {
+  background-color: #fff;
+}
+section.breadcrumb {
+  padding-left: 5rem;
+}
+
+section.single-service {
+  padding-bottom: 5rem;
+  .gallery-photo {
+    height: 200px;
+  }
+  .contact {
+    margin-top: 5rem;
+    padding-top: 5rem;
+    width: 100%;
+    border-top: 1px solid $mainBg;
+    .content {
+      text-align: center;
+      .title {
+        font-weight: 700;
+        margin-bottom: 1.7rem;
+        font-size: 2.3rem;
+      }
+      button {
+        font-size: 1rem;
+      }
+    }
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+    @import '../contact/contact_data';
+    .contact-data {
+      padding: 1rem;
+    }
+  }
+}
+
+p {
+  margin-bottom: 0;
+}

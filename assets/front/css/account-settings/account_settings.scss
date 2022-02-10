@@ -1,0 +1,32 @@
+@import "../news/breadcrumb";
+@import "../validation-errors/validation_errors";
+@import "../custom-label/custom_label";
+
+main {
+  background-color: #fff;
+}
+section.breadcrumb {
+  padding-left: 5rem;
+}
+
+section.account-settings {
+  padding-bottom: 5rem;
+  .header-input {
+    background-color: $mainBg;
+    height: 40px;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+    width: 100%;
+    display: block;
+    border: unset;
+    color: $text;
+  }
+  select.header-input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("../../img/select/select-arrow.svg");
+    background-size: 13px;
+    background-position: 98% 50%;
+  }
+}

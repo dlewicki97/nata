@@ -1,0 +1,26 @@
+@import "../layout/colors";
+
+.label.news {
+  background-color: var(--first-color);
+}
+.label.promotion {
+  background-color: $secondBg;
+}
+.label.outlet {
+  background-color: $warning;
+}
+.labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0.5rem;
+}
+.label {
+  font-weight: 700;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.7rem;
+  text-align: center;
+  margin: 0 0.5rem;
+  margin-bottom: 0.4rem;
+}

@@ -1,0 +1,36 @@
+.variants {
+  width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+  .variant-title {
+    font-weight: 600;
+  }
+  .variant {
+    $bg-dims: 60px;
+    padding: 0.2rem;
+    .bg {
+      height: $bg-dims;
+      width: $bg-dims;
+      transition: 0.2s all;
+      background-size: 80%;
+      background-color: #fff;
+      &.error {
+        z-index: -1;
+      }
+      &:hover {
+        transform: scale(1.3);
+        border: 1px solid $secondBg;
+        z-index: 1;
+      }
+    }
+    .unavailable-mask {
+      width: $bg-dims;
+      height: $bg-dims;
+      div {
+        font-size: 0.7rem;
+        font-weight: 800;
+      }
+    }
+  }
+}

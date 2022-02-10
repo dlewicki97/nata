@@ -1,0 +1,53 @@
+@import "../news/breadcrumb";
+
+main {
+  padding: 3rem 5rem;
+  background-color: #fff;
+  @media (max-width: 992px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @media (max-width: 576px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.page-title {
+  color: $firstBg;
+}
+section.contact-page {
+  .form-check-input[type="checkbox"] + label:before,
+  .form-check-input[type="checkbox"]:not(.filled-in) + label:after,
+  label.btn input[type="checkbox"] + label:before,
+  label.btn input[type="checkbox"]:not(.filled-in) + label:after {
+    background-color: $mainBg;
+  }
+  .form-check-input[type="checkbox"]:checked + label:before,
+  label.btn input[type="checkbox"]:checked + label:before {
+    background-color: #fff !important;
+  }
+
+  .checkbox-label {
+    line-height: 15px;
+    color: $firstBg;
+    font-size: 0.7rem;
+  }
+
+  input {
+    height: 50px;
+  }
+  input,
+  textarea {
+    display: block;
+    background-color: $mainBg;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  button {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  @import "contact_data";
+}

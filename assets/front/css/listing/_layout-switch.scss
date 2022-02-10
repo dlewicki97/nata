@@ -1,0 +1,31 @@
+.layout-switch {
+  display: flex;
+  .switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s all;
+    cursor: pointer;
+    svg {
+      height: 13px;
+      width: 13px;
+      fill: #383d47;
+    }
+    background-color: #f3f4f8;
+    &:hover {
+      background-color: #383d47;
+      svg {
+        fill: #f3f4f8 !important;
+      }
+    }
+  }
+
+  .switch.active {
+    background-color: #383d47;
+    svg {
+      fill: #f3f4f8;
+    }
+  }
+}

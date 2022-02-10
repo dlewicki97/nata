@@ -1,0 +1,20 @@
+@import "../layout/colors";
+@import "../news/breadcrumb";
+@import "product-head";
+@import "product-body";
+@import "recommended-products";
+@import "reminder";
+@import "../listing/popovers";
+@import "variants";
+
+main {
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  @media (max-width: 992px) {
+    padding-top: 1rem;
+  }
+  .breadcrumb {
+    padding-left: 5rem;
+  }
+}

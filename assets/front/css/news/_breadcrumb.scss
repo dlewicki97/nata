@@ -1,0 +1,20 @@
+@import "../layout/colors";
+section.breadcrumb {
+  display: flex;
+  background-color: #fff;
+  padding-left: 0;
+
+  .item {
+    font-size: 0.7rem;
+    color: #2e2e2e4f;
+    font-weight: 700;
+    margin-right: 0.2rem;
+    text-transform: uppercase;
+    a {
+      color: inherit;
+      &:hover {
+        color: $secondBg;
+      }
+    }
+  }
+}
